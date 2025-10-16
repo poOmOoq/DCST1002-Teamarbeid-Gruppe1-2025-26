@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #001A23;
+    --secondary-color: #31493C;
+    --third-color: #7A9E7E;
+    --nav-padding: 0rem;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    line-height: 100%;
+}
+
+.menu {
+    background-color: var(--secondary-color);
+    width: 100%;
+    line-height: 1.75rem;
+}
+
+.site {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+}
+
+.site:hover, .here {
+    background-color: var(--third-color);
+    color: black;
+}
+
+.main {
+    background-color: var(--primary-color);
+}
