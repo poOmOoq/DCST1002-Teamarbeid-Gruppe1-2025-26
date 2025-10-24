@@ -86,4 +86,4 @@ const load_text = (file, id) => {
         .catch((e) => console.log(e));
 };
 
-document.onload = load_text("../TXT/test.txt", "home");
+document.onload = load_text("./TXT/test.txt", "home");
