@@ -11,25 +11,34 @@
 
 body {
     margin: 0;
-    width: 100%;
-    line-height: 100%;
+    padding: 0;
+    background-color: var(--primary-color);
 }
 
-.menu {
+.top-nav {
+    z-index: 100;
+    position: sticky;
+    top: 0;
     background-color: var(--secondary-color);
-    width: 100%;
-    line-height: calc(var(--size) * 1.4);
+    overflow: hidden;
 }
 
-.site {
-    vertical-align: middle;
+.top-nav a {
+    float: left;
+    display: block;
+    color: white;
     text-align: center;
-    display: inline-block;
-    height: 100%;
-    width: 15%;
+    padding: calc(var(--size)/2) var(--size);
+    text-decoration: none;
 }
 
-.site:hover, .here {
+.top-nav a:hover, .top-nav a.here{
     background-color: var(--third-color);
     color: black;
+}
+
+#main {
+    padding: 0  calc(var(--size)*2);
+    padding-bottom: calc(var(--size)*2);
+    line-height: calc(var(--size)*1.3);
 }
