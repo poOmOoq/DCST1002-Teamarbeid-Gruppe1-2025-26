@@ -15,15 +15,15 @@ body {
     background-color: var(--primary-color);
 }
 
-.top-nav {
-    z-index: 100;
+.topNav {
+    z-index: 10;
     position: sticky;
     top: 0;
     background-color: var(--second-color);
     overflow: hidden;
 }
 
-.top-nav a {
+.topNav a {
     float: left;
     display: block;
     color: white;
@@ -32,7 +32,7 @@ body {
     text-decoration: none;
 }
 
-.top-nav a:hover, .top-nav a.here{
+.topNav a:hover, .topNav a.here{
     background-color: var(--third-color);
     color: black;
 }
@@ -63,14 +63,14 @@ body {
     padding: 0.5rem
 }
 
-.answear_checker {
+.answearChecker {
     margin-top: 0.5rem;
     padding: 0.5rem;
     border: 0.3rem solid var(--third-color);
     border-radius: 1rem;
 }
 
-.not_answeared {
+.notAnsweared {
     border-color: #6c757d;
     background-color: #343a40;
 }
@@ -85,3 +85,42 @@ body {
     background-color: #008000;
 }
 
+#grayOut {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    margin-top: -100vh;
+}
+
+#popUp {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--second-color);
+    z-index: 1000;
+    position: sticky;
+    width: 15rem;
+    border: 0.5rem solid var(--third-color);
+    border-radius: 3rem;
+}
+
+#popUpContent {
+    font-size: calc(var(--size)*1.2);
+}
+
+#popUpScam {
+    font-size: calc(var(--size)*1.6);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 0.3rem solid var(--third-color);
+    border-radius: 1rem;
+}
+
+.downLow {
+    
+}
+
+.hide {
+    display: none;
+}

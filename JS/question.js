@@ -1,17 +1,4 @@
 /**
- * @param {HTMLElement} parent
- * @param {string} childTag
- * @param {string} childHTML
- * @returns {HTMLElement}
- */
-const append_this = (parent, childTag, childHTML = "") => {
-    let child = document.createElement(childTag);
-    child.innerHTML = childHTML;
-    parent.appendChild(child);
-    return child;
-};
-
-/**
  * @param {string} question_id
  */
 const check_answear = (question_id) => {
@@ -24,10 +11,10 @@ const check_answear = (question_id) => {
         if (!answear.checked) flag = false;
     });
     if (flag) {
-        answear_label.classList = "answear_checker correct";
+        answear_label.classList = "answearChecker correct";
         answear_label.innerHTML = "Riktig svar";
     } else {
-        answear_label.classList = "answear_checker incorrect";
+        answear_label.classList = "answearChecker incorrect";
         answear_label.innerHTML = "Feil svar";
     }
 };
@@ -116,8 +103,8 @@ const add_question_container = (main, index, data) => {
     append_this(choices, "br");
 
     let state = append_this(choices, "div", "Ikke svart på");
-    state.classList.toggle("answear_checker");
-    state.classList.toggle("not_answeared");
+    state.classList.toggle("answearChecker");
+    state.classList.toggle("notAnsweared");
 };
 
 /**
@@ -134,45 +121,3 @@ const add_contet = (main, data) => {
         add_question_container(main, ~~(i / 2) + 1, data[i]);
     }
 };
-
-/**
- * @param {HTMLElement} el
- */
-const clear = (el) => {
-    el.innerHTML = "";
-};
-
-/**
- * @param {string} file
- * @param {string} id
- */
-const load_text = (file, id) => {
-    fetch(file)
-        .then((res) => res.text())
-        .then((data) => {
-            let buttons = document.getElementsByClassName("here");
-            for (let i = 0; i < buttons.length; i++)
-                if (
-                    (buttons[i].id != id &&
-                        buttons[i].classList.contains("here")) ||
-                    (buttons[i].id == id &&
-                        !buttons[i].classList.contains("here"))
-                )
-                    buttons[i].classList.toggle("here");
-
-            const main = document.getElementById("main");
-
-            clear(main);
-            sessionStorage.clear();
-
-            let start = data.indexOf("#") + 1;
-            let end = data.indexOf("#", start);
-
-            append_this(main, "h1", data.slice(start, end));
-
-            add_contet(main, data.slice(end + 1).split("[q]"));
-        })
-        .catch((e) => console.log(e));
-};
-
-document.onload = load_text("./TXT/test.txt", "home");
