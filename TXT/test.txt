@@ -24,7 +24,14 @@ Laboriosam inventore nesciunt iure error molestiae praesentium hic adipisci modi
 
 Repudiandae, omnis reprehenderit voluptate quam vel laudantium delectus harum eligendi neque necessitatibus ad adipisci ipsam enim non libero ipsa! Placeat ad quod in mollitia iure a sequi excepturi odio, tempora nisi beatae accusantium ipsa sed recusandae veritatis id.
 
-[q] [q]
+[q]
+checkbox
+Question2?
+-Alpha2
+-Bravo2
++Charlie2
++Delta2
+[q]
 
 In eveniet pariatur placeat quos magnam, saepe non nihil dicta, enim recusandae reiciendis eum vero ratione incidunt doloremque consequuntur perferendis voluptatem tempore laborum corrupti iste laudantium. Adipisci eum inventore et! Beatae dignissimos suscipit perferendis quis modi maxime reiciendis cupiditate illo ipsum recusandae ipsam repellendus eligendi cumque, eveniet vero, eum earum itaque veniam odit mollitia dolorem iure perspiciatis culpa repellat?
 

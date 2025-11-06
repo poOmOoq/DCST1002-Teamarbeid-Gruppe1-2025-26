@@ -1,6 +1,6 @@
 :root {
     --primary-color: #001A23;
-    --secondary-color: #31493C;
+    --second-color: #31493C;
     --third-color: #7A9E7E;
     --size: 1.25rem;
     color: white;
@@ -19,7 +19,7 @@ body {
     z-index: 100;
     position: sticky;
     top: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--second-color);
     overflow: hidden;
 }
 
@@ -42,3 +42,46 @@ body {
     padding-bottom: calc(var(--size)*2);
     line-height: calc(var(--size)*1.3);
 }
+
+.outerContainer {
+    width: 100%;
+}
+
+.outerContainer * {
+    justify-self: center;
+}
+
+.questionContainer {
+    padding: 0.5rem 4rem;
+    width: fit-content;
+    background-color: var(--second-color);
+    border: 0.5rem solid var(--third-color);
+    border-radius: 3rem;
+}
+
+.questionContainer > div {
+    padding: 0.5rem
+}
+
+.answear_checker {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 0.3rem solid var(--third-color);
+    border-radius: 1rem;
+}
+
+.not_answeared {
+    border-color: #6c757d;
+    background-color: #343a40;
+}
+
+.incorrect {
+    border-color: #ff002b;
+    background-color: #a0001c;
+}
+
+.correct {
+    border-color: #70e000;
+    background-color: #008000;
+}
+

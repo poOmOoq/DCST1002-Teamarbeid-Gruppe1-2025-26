@@ -1,17 +1,70 @@
+/**
+ * @param {HTMLElement} parent
+ * @param {string} childTag
+ * @param {string} childHTML
+ * @returns {HTMLElement}
+ */
 const append_this = (parent, childTag, childHTML = "") => {
-    var child = document.createElement(childTag);
+    let child = document.createElement(childTag);
     child.innerHTML = childHTML;
     parent.appendChild(child);
     return child;
 };
 
+/**
+ * @param {string} question_id
+ */
+const check_answear = (question_id) => {
+    let question = document.getElementById(question_id);
+    let answear_label = question.children[1].lastElementChild;
+    let correct = sessionStorage.getItem(question_id).split(",");
+    let flag = true;
+    correct.forEach((id) => {
+        let answear = document.getElementById(id);
+        if (!answear.checked) flag = false;
+    });
+    if (flag) {
+        answear_label.classList = "answear_checker correct";
+        answear_label.innerHTML = "Riktig svar";
+    } else {
+        answear_label.classList = "answear_checker incorrect";
+        answear_label.innerHTML = "Feil svar";
+    }
+};
+
+/**
+ * @param {string} question
+ * @param {string} answear
+ */
+const answear_clicked = (question_id, answear_id) => {
+    let question = document.getElementById(question_id);
+    let all_answears = question.children[1].children;
+    if (all_answears[0].type == "checkbox") return;
+    for (let i = 0; i < all_answears.length; i++) {
+        let el = all_answears[i];
+        if (el.nodeName != "INPUT" || el.type != "radio") continue;
+        el.checked = el.id == answear_id;
+    }
+};
+
+/**
+ * @param {HTMLElement} container
+ * @param {string} type
+ * @param {string} answear_text
+ * @param {string} id
+ * @param {string} question_id
+ * @returns {boolean}
+ */
 const add_answear = (container, type, answear_text, id, question_id) => {
-    var answear = append_this(container, "input");
+    let answear = append_this(container, "input");
     answear.setAttribute("type", type);
+    answear.id = id;
+    answear.setAttribute(
+        "onclick",
+        `answear_clicked("${question_id}", "${id}")`
+    );
 
-    answear.setAttribute("id", id);
-
-    var label = append_this(container, "label", answear_text.slice(1));
+    let label = append_this(container, "label", answear_text.slice(1));
     label.setAttribute("for", id);
 
     append_this(container, "br");
@@ -19,21 +72,31 @@ const add_answear = (container, type, answear_text, id, question_id) => {
     return false;
 };
 
+/**
+ * @param {HTMLElement} main
+ * @param {number} index
+ * @param {string} data
+ */
 const add_question_container = (main, index, data) => {
-    var question_id = "q" + index.toString();
-    var questionContainer = append_this(main, "div");
-    questionContainer.classList = "questionContainer";
+    let question_id = "q" + index.toString();
 
-    var query = data.replaceAll("\r", "").split("\n").slice(1, -1);
+    let outerContainer = append_this(main, "div");
+    outerContainer.classList = "outerContainer";
+
+    let questionContainer = append_this(outerContainer, "div");
+    questionContainer.classList = "questionContainer";
+    questionContainer.id = question_id;
+
+    let query = data.replaceAll("\r", "").split("\n").slice(1, -1);
     append_this(questionContainer, "div", query[1]);
 
-    var choices = append_this(questionContainer, "form");
+    let choices = append_this(questionContainer, "form");
 
-    var all_correct = [];
+    let all_correct = [];
 
-    for (var i = 2; i < query.length; i++) {
-        var answear_id = "q" + index.toString() + "a" + i.toString();
-        var correct = add_answear(
+    for (let i = 2; i < query.length; i++) {
+        let answear_id = "q" + index.toString() + "a" + i.toString();
+        let correct = add_answear(
             choices,
             query[0],
             query[i],
@@ -43,41 +106,67 @@ const add_question_container = (main, index, data) => {
         if (correct) all_correct.push(answear_id);
     }
 
-    var submit = append_this(choices, "input");
-    submit.setAttribute("type", "submit");
-    submit.setAttribute("value", "Send inn svar");
+    sessionStorage.setItem(question_id, all_correct.toString());
+
+    let button = append_this(choices, "input");
+    button.setAttribute("type", "button");
+    button.setAttribute("value", "Send inn svar");
+    button.setAttribute("onclick", `check_answear("${question_id}")`);
+
+    append_this(choices, "br");
+
+    let state = append_this(choices, "div", "Ikke svart på");
+    state.classList.toggle("answear_checker");
+    state.classList.toggle("not_answeared");
 };
 
+/**
+ * @param {HTMLElement} main
+ * @param {string[]} data
+ */
 const add_contet = (main, data) => {
-    for (var i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
+        /* if content is not a question */
         if (i % 2 == 0) {
             append_this(main, "div", data[i].replaceAll("\n", "<br>"));
             continue;
         }
-        add_question_container(main, i, data[i]);
+        add_question_container(main, ~~(i / 2) + 1, data[i]);
     }
 };
 
+/**
+ * @param {HTMLElement} el
+ */
 const clear = (el) => {
     el.innerHTML = "";
 };
 
+/**
+ * @param {string} file
+ * @param {string} id
+ */
 const load_text = (file, id) => {
     fetch(file)
         .then((res) => res.text())
         .then((data) => {
-            var buttons = document.getElementsByClassName("here");
-            for (var i = 0; i < buttons.length; i++)
-                if (buttons[i].id != id) buttons[i].classList = "";
-
-            document.getElementById(id).classList = "here";
+            let buttons = document.getElementsByClassName("here");
+            for (let i = 0; i < buttons.length; i++)
+                if (
+                    (buttons[i].id != id &&
+                        buttons[i].classList.contains("here")) ||
+                    (buttons[i].id == id &&
+                        !buttons[i].classList.contains("here"))
+                )
+                    buttons[i].classList.toggle("here");
 
             const main = document.getElementById("main");
 
             clear(main);
+            sessionStorage.clear();
 
-            var start = data.indexOf("#") + 1;
-            var end = data.indexOf("#", start);
+            let start = data.indexOf("#") + 1;
+            let end = data.indexOf("#", start);
 
             append_this(main, "h1", data.slice(start, end));
 
