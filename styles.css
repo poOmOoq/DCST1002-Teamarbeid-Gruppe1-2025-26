@@ -15,7 +15,7 @@ body {
     background-color: var(--primary-color);
 }
 
-.topNav {
+#topNav {
     z-index: 10;
     position: sticky;
     top: 0;
@@ -23,7 +23,7 @@ body {
     overflow: hidden;
 }
 
-.topNav a {
+#topNav a {
     float: left;
     display: block;
     color: white;
@@ -32,7 +32,7 @@ body {
     text-decoration: none;
 }
 
-.topNav a:hover, .topNav a.here{
+#topNav a:hover, .here{
     background-color: var(--third-color);
     color: black;
 }
@@ -75,16 +75,6 @@ body {
     background-color: #343a40;
 }
 
-.incorrect {
-    border-color: #ff002b;
-    background-color: #a0001c;
-}
-
-.correct {
-    border-color: #70e000;
-    background-color: #008000;
-}
-
 #grayOut {
     z-index: 100;
     position: sticky;
@@ -95,14 +85,15 @@ body {
     margin-top: -100vh;
 }
 
+#popUp, #popUp * {
+    cursor: default;
+}
+
 #popUp {
     padding: 1.5rem 2.5rem;
-    background-color: var(--second-color);
     z-index: 1000;
     position: sticky;
     width: 15rem;
-    border: 0.5rem solid var(--third-color);
-    border-radius: 3rem;
 }
 
 #popUpContent {
@@ -117,8 +108,43 @@ body {
     border-radius: 1rem;
 }
 
-.downLow {
-    
+#popUpCloseContainer {
+    margin-top: -0.5rem;
+    margin-bottom: 1.3rem;
+    height: calc(var(--size)*1.1);
+    width: 100%;
+}
+
+#popUpClose {
+    padding: 0.1rem;
+    border: 0.3rem solid var(--third-color);
+    border-radius: 10rem;
+    font-size: calc(var(--size)*1.1);
+}
+
+#popUpScam {
+    cursor: pointer;
+}
+
+#popUpScam:hover {
+    opacity: 0.7;
+}
+
+.popUpBorder {
+    background-color: var(--second-color);
+    border: 0.5rem solid var(--third-color);
+    border-radius: 3rem;
+
+}
+
+.incorrect {
+    border-color: #ff002b;
+    background-color: #a0001c;
+}
+
+.correct {
+    border-color: #70e000;
+    background-color: #008000;
 }
 
 .hide {

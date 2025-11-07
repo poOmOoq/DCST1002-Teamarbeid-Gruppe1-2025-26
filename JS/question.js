@@ -6,10 +6,18 @@ const check_answear = (question_id) => {
     let answear_label = question.children[1].lastElementChild;
     let correct = sessionStorage.getItem(question_id).split(",");
     let flag = true;
-    correct.forEach((id) => {
-        let answear = document.getElementById(id);
-        if (!answear.checked) flag = false;
+
+    [...question.children[1].children].forEach((answear) => {
+        if (
+            flag &&
+            answear.id != "" &&
+            correct.includes(answear.id) ^ answear.checked
+        ) {
+            flag = false;
+            return;
+        }
     });
+
     if (flag) {
         answear_label.classList = "answearChecker correct";
         answear_label.innerHTML = "Riktig svar";

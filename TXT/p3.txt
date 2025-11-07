@@ -1,0 +1,23 @@
+#Mistanke om phishing forsøk#
+Hvis du tror du har mottatt en phishing-melding, er det viktig å handle rolig og forsiktig. Det første du bør gjøre, er å unngå å klikke på lenker, åpne vedlegg eller svare på meldingen. Selv om meldingen ser ekte ut, kan ett klikk føre deg til en falsk nettside eller laste ned skadelig programvare. Phishing-forsøk er laget for å lure deg til å gi fra deg sensitiv informasjon som passord, kortnummer eller personopplysninger. 
+
+Deretter bør du se etter tegn på at meldingen ikke er ekte. Sjekk avsenderadressen nøye – mange svindlere bruker adresser som ligner på ekte, men med små forskjeller, som for eksempel “posten-no.com” i stedet for “posten.no”. Språkfeil, dårlig grammatikk og stressende formuleringer som “kontoen din blir stengt” eller “bekreft umiddelbart” er også typiske faresignaler. Hold musepekeren over eventuelle lenker (uten å klikke) for å se hvilken nettside de faktisk leder til. Dersom adressen ser rar ut eller ikke samsvarer med avsenderens organisasjon, er det sannsynligvis et svindelforsøk.
+
+Tenk også over om du faktisk forventet meldingen. Hvis du får e-post fra banken, Skatteetaten eller IT-avdelingen uten å ha bedt om det, bør du være skeptisk. I slike tilfeller kan du kontakte organisasjonen direkte via offisielle kanaler, for eksempel ved å ringe kundeservice eller logge inn på nettsiden deres gjennom nettleseren – ikke gjennom lenken i e-posten.
+
+Videre bør du rapportere hendelsen. Hvis du er på skole eller jobb, sier du fra til IT-avdelingen eller den som er ansvarlig for datasikkerhet. Som privatperson kan du rapportere svindelforsøk til politiets nettpatrulje eller til NorSIS via slettmeg.no. Dersom meldingen gjelder banken din, bør du varsle banken umiddelbart slik at de kan overvåke eventuelle mistenkelige transaksjoner.
+
+[q]
+radio
+Hvilken lenke vil banken DNB sende deg på meldinger?
+-www.dnb.nu
+-www.dnb.no
++De sender ikke en lenke til nettbanken, men oppforder til å søke på "DNB" i nettleseren.
+[q]
+
+Hvis du allerede har trykket på en lenke eller oppgitt informasjon, må du handle raskt. Koble deg fra internett hvis du mistenker at du har lastet ned noe skadelig, og kjør et virussøk på datamaskinen. Endre passordene dine, spesielt hvis du brukte samme passord flere steder, og kontakt banken hvis du har delt kort- eller kontoinformasjon.
+
+Kort oppsummert: Ikke trykk på noe, undersøk nøye, tenk kritisk, rapporter hendelsen, og sikre kontoene dine dersom du har gjort en feil. Å reagere raskt og riktig kan forhindre at svindlere får tilgang til viktig informasjon og spare deg for store problemer senere.
+
+Kilder:
+Se kildesiden, øverst til høyre.

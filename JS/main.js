@@ -3,19 +3,19 @@
  * @param {string} id
  */
 const load_text = (file, id) => {
+    try {
+        clear_time();
+        pop_up_close();
+    } catch {}
     fetch(file)
         .then((res) => res.text())
         .then((data) => {
-            let buttons = document.getElementsByClassName("here");
-            if (id == "home" || id == "quiz") pop_up_starter();
-            for (let i = 0; i < buttons.length; i++)
-                if (
-                    (buttons[i].id != id &&
-                        buttons[i].classList.contains("here")) ||
-                    (buttons[i].id == id &&
-                        !buttons[i].classList.contains("here"))
-                )
-                    buttons[i].classList.toggle("here");
+            if (id == "quiz") pop_up_starter();
+
+            try {
+                document.getElementsByClassName("here")[0].classList = "";
+            } catch {}
+            document.getElementById(id).classList = "here";
 
             const MAIN = document.getElementById("main");
 
@@ -33,5 +33,5 @@ const load_text = (file, id) => {
 };
 
 (() => {
-    document.onload = load_text("./TXT/test.txt", "home");
+    document.onload = load_text("./TXT/welcome.txt", "home");
 })();

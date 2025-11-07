@@ -1,0 +1,26 @@
+#Velkommen!#
+Her skal du få lære om phishing.
+Du har antageligvis hørt utrykkenne før, og hvis ikke, så er du på rett sted.
+Her får du 3 forkjellige artikkler som vil ta med deg gjennom hva phishing innebærer; Hva er "phishing"? Hvordan gjenkjenner man phishing? Og hvordan håndterer man phishing?
+Det er også en lærerik quiz. Den kan være morro å prøve både før og etter at man har lest artiklene for å se om det er noe forskjell.
+Underveis vil du møte på noen spørsmål som de under:
+
+[q]
+radio
+Test spørsmål 1! Her er det kun et alternativ som er korrekt.
+-Ikke riktig
+-Et steg til
++Dette er svaret
+-Nååå har du gått for langt
+[q]
+[q]
+checkbox
+Test spørsmål 2!<br>Her er må du velge ALLE de riktige svarene for å få korrekt! OG KUN DEM!
+-Dette er ikke et av svarene
++Men det er denne!
+-Dessverre ikke denne
+-Og heller ikke denne
++Men dette er det siste svaret!
+[q]
+
+Hvis du er interessert i å lære enda mer, så har vi en side med kildene vi har brukt. Vi anbefaler også å søke rundt på nettet for å se hva du finner, bare husk å være klidekritisk og pass deg for phishing ( ͡° ͜ʖ ͡°)
