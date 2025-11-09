@@ -1,15 +1,35 @@
 #Kilder for artiklene#
 Artikkel 1 - "Phishing?"
 
+Datatilsynet, u.d. Phishing. [Internett] 
+Available at: https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/avvik/digitale-angrep/phishing
+[Funnet 27 Oktober 2025].
+
+Nettvett, 2022. Hva er phishing?. [Internett] 
+Available at: https://nettvett.no/phishing
+[Funnet 26 Oktober 2025].
+
+Nordvåg, H. B., 2019. Dette er phishing – og slik styrer du unna de falske e-postene. [Internett] 
+Available at: https://www.telenor.no/online/sikkerhet/svindel/dette-er-phishing/?srsltid=AfmBOopjDU_PughCcmH9vbNywATvBoG3NrOH4hFw33TBItWAQwPXHVRd
+[Funnet 29 Oktober 2025].
+
 
 Artikkel 2 - Gjenkjenning
+
+Nettvett, 2020. Hvordan vurdere om et nettsted er sikkert. [Internett] 
+Tilgjengelig ved: https://nettvett.no/hvordan-vurdere-om-et-nettsted-er-sikkert/
+[Funnet 27 Oktober 2025].
+
+Nettvett, 2022. SMiShing – SMS-svindel. [Internett] 
+Tilgjengelig ved: https://nettvett.no/smishing-sms-svindel/ 
+[Funnet 28 Oktober 2025].
 
 
 Artikkel 3 - Håndtering
 
 Microsoft, u.d. Protect yourself from phishing. [Internett] 
 Tilgjengelig ved: https://support.microsoft.com/en-us/windows/protect-yourself-from-phishing-0c7ea947-ba98-3bd9-7184-430e1f860a44
-[Funnet 27 Oktober 2025].
+[Funnet 26 Oktober 2025].
 
 NorSIS, 2021. norsis. [Internett] 
 Tilgjengelig ved: https://norsis.no/content/uploads/2022/05/NorSIS_Trusler_Trender_2021_Digital.pdf

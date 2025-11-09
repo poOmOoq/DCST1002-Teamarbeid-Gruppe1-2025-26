@@ -1,0 +1,37 @@
+#Hva er phishing og hvorfor brukes det?#
+Phishing er en type nettsvindel og sosial manipulering hvor senderen, en svindler, prøver å få mottakeren til å oppgi privat informasjon ved å utgi seg for å være en troverdig sender. Dette kan skje ved at de utgir seg for å være banken din hvor du må oppgi passord og annen bankinformasjon for å stoppe en falsk betaling. Slik kan de bruke informasjonen din for å faktisk ta penger ut av kontoen din.
+Fun fact: «Phishing» får navnet sitt fra det engelske ordet for fisking, «fishing», og trolig «ph» fra «phreaking» som er en slags form for hacking. Quirky.
+
+Det er mange forskjellige måter svindleren kan prøve å utføre phishing på; de kan bruke SMS, e-post eller sosiale medier og de kan ringe eller bruke annonser på en nettside. Fellestrekket er at i alle tilfellene, utenom ringing, så vil de at du skal trykke inn i en lenke hvor de kan stjele informasjonen din. Når det gjelder ringing så vil de heller at du skal si informasjonen din høyt over telefonen ved å utgi seg for å skrive inn informasjonen for å hjelpe deg.
+Fun fact: En indonesisk streamer ble hacket og kanalen ble brukt for å spre crypto-scams. Noen antar at dette skjedde fordi hun klikket enten på lenke som skulle være en sponsor eller åpnet en PDF som stjal «cookiene», eller informasjonskapslene, til datamaskinen hennes. Ja, PDF-er kan gjøre det.
+
+Phishing er en effektiv hacking metode fordi mennesker er ofte lettere å lure enn systemer. Systemer består bare av kode, dermed er den eneste måten å hacke dem på å prøve å finne sårbarheter i koden. Når det gjelder mennesker så kan man prøve å manipulere dem. Enkelte mennesker er for godtroende eller sjekker ikke ordentlig før de svarer på ting. Videre så kan phishing bli rettet mot spesifikke personer, kalt spear-phishing, og da kan det bli gjort etterforskning på dem på LinkedIn eller andre sosiale medier for å etterligne spesifikke organisasjoner. Det er også ekstremt billig og kostnadseffektivt. Alt en hacker trenger å gjøre er å kjøre et program som sender masse e-poster, lager bots på Instragram eller Facebook som sender meldinger eller bruker en masse SIM-kort for å sende meldinger til folk. Dette koster som oftest veldig lite og krever lite plass på en datamaskin.
+
+[q]
+radio
+Hva prøver svindlere hovedsakelig å oppnå med phishing?
+-Kapre brukere for å skaffe flere likes på Tik Tok.
++Få tak i personlig informasjon, som passord eller bankkontoopplysninger.
+-Spre virus på datamaskinen din.
+-Skaffe noen fisk som de kan spise til middag.
+[q]
+
+
+Phishing bygger ofte på spesifikke følelser for å få offeret til å seg tvunget til å engasjere, dette kaller man «sosial manipulering». De kan sende en e-post eller melding hvor de sier at Instagram-brukeren din har blitt hacket og du må lage et nytt passord; her spiller angriperen på frykten for at du skal miste brukeren din. Andre følelser de kan spille på er grådighet, hvor de sender en melding hvor du har «vunnet» noe og må klikke på en lenke, og nysgjerrighet, «Se hvem som har lagt deg til på Instagram!».
+
+[q]
+checkbox
+Hvorfor er phishing så populært blant hackere?
++Billig å gjøre.
+-Prisene i butikken har gått opp og det er derfor billigere å skaffe fisk selv enn å kjøpe.
++Mennesker er skapninger som er lette å manipulere.
+-Det er morsomt lowkey.
+-Det er umulig å stoppe.
+[q]
+
+
+Målet med phishing er ikke alltid å skaffe bankdetaljer for å tømme kontoen. Noen ganger så er målet heller informasjon eller tilgang til systemer. Med denne informasjonen kan de for eksempel gjøre noe som kalles «Ransomware» hvor de truer med å slette informasjon eller spre den hvis de ikke får penger fra den som har blitt svindlet. Dette kan skje med både bedrifter og med enkelte individer. Det kan også bli brukt som spionasje for å skaffe informasjon på politikere eller organisasjoner.
+Fun fact: Den største fisken fanget i Norge var en håkjerring, en type hai, som veide over ett tonn!
+
+Kilder:
+Se kildesiden, øverst til høyre.

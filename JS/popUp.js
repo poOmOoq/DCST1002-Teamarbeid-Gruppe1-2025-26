@@ -28,7 +28,6 @@ const pop_up_show = (ad) => {
 
     content.innerHTML = ad[0];
     scam.innerHTML = ad[1];
-    // scam.addEventListener("click", check_quiz("scam"));
 
     popUpClose.onclick = null;
     popUpClose.onmouseover = null;

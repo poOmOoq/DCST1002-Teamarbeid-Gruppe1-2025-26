@@ -3,41 +3,145 @@ La oss teste ut hva du kan om phishing!
 
 [q]
 radio
-Spørsmål 1<br>qwerty
--A
--B
-+C
--D
+Hva er et typisk tegn på at en e-post er phishing?
+-Den er sendt midt på natten
++Avsenderadressen er en privat Gmail/Hotmail
+-Den har ingen logo i meldingen
+-Den har et langt passord nevnt i teksten
 [q]
 [q]
 radio
-Spørsmål 2<br>qwerty
--A
--B
-+C
--D
+Hva er mest vanlig for ekte selskaper når det kommer til e-postadresser?
+-theyuse@randomemail123.eu
+-upport@hotmail.com
+-Bruk av gratis Gmail-kontoer
++Egne domener som f.eks no-reply@selskapnavn.com
 [q]
 [q]
 radio
-Spørsmål 3<br>qwerty
--A
--B
-+C
--D
+Hva er et vanlig kjennetegn i språket på phishing-meldinger?
+-De er skrevet med veldig avansert språk
+-De er alltid feilstavet på engelsk, men ikke på norsk
++De kan inneholde manglende ord, skrivefeil og rare setninger
+-De er skrevet i bare store bokstaver
 [q]
 [q]
 radio
-Spørsmål 4<br>qwerty
--A
--B
-+C
--D
+Hvorfor er dårlig språk et mindre sikkert tegn i dag enn før?
+-Fordi bedrifter skriver slurvete nå
++Fordi AI/KI kan gjøre språket mer naturlig
+-Fordi Gmail sjekker språket for dem
+-Fordi oversettelsesprogrammer er dårligere nå
 [q]
 [q]
 radio
-Spørsmål 5<br>qwerty
--A
--B
-+C
--D
+Hvilket eksempel er typisk "stress og press" taktikk?
+-"Hei! Sjekk denne kule videoen!"
++"Du må logge inn NÅ ellers låses kontoen!"
+-"Vi minner om service i morgen"
+-"Din bestilling er klar for henting"
+[q]
+[q]
+radio
+Hvordan kan du sjekke om en lenke virker mistenkelig?
+-Google navnet til banken først
+-Dele lenken med en venn
++Holde musepekeren over og se hvilken URL den faktisk peker til
+-Kopiere lenken rett i Word
+[q]
+[q]
+radio
+Hva er hovedregelen for kjente tjenester når du ser på domenenavnet?
+-De bruker ofte veldig lange adresser
+-De bruker kun HTTPS uten hengelås
++De har enkle domenenavn, f.eks bankid.no
+-De bruker alltid .org
+[q]
+[q]
+radio
+Hva er riktig om hengelås og "https" i nettleseren?
+-Hvis hengelås er der = 100% ekte nettside
+-Phishing-sider bruker aldri https
++Du kan ikke stole kun på hengelås og https
+-Kun statlige nettsider har hengelås
+[q]
+[q]
+radio
+Hva er typisk for fake nettsider?
+-De har alltid veldig høy kvalitet
++De bruker ofte skjermbilder og har dårlig norsk, logoer og feil font
+-De bruker aldri logo
+-De viser reklame fra Google
+[q]
+[q]
+checkbox
+Hvilke handlinger anbefales i teksten når du mottar en mistenkelig e-post?
++Ikke klikke på lenker eller åpne vedlegg
++Ikke svare på meldingen
+-Endre innstillinger i nettleseren
+-Kontakte avsenderen via lenken i e-posten
+[q]
+[q]
+radio
+Hva er et tydelig faresignal i en phishing-melding ifølge teksten?
+-At avsenderens navn er riktig stavet
+-Saklig og formell språkbruk
++Stressende formuleringer som "kontoen din blir stengt"
+-At meldingen inneholder vedlegg
+[q]
+[q]
+checkbox
+Hvilke metoder foreslås for å kontrollere om en lenke i e-posten er trygg?
+-Holde musepekeren over lenken for å se måladressen (uten å klikke)
++Holde musepekeren over lenken for å se måladressen (uten å klikke)
++Sjekke om adressen samsvarer med avsenderens organisasjon
+-Å klikke for å se hva som skjer
+[q]
+[q]
+radio
+Hvis du får e-post som ser ut til å være fra banken, hva bør du gjøre?
++Kontakte banken via offisielle kanaler eller logge inn direkte på bankens nettside
+-Ringe nummeret i e-posten uten å undersøke det først
+-Klikke på lenken for å bekrefte informasjonen
+-Svare på e-posten med personopplysninger
+[q]
+[q]
+checkbox
+Hvem bør du varsle hvis du mottar en mulig phishing-melding på jobb eller skole?
++IT-avdelingen eller den som er ansvarlig for datasikkerhet
+-Alle kolleger via en svar-til-alle
++Eventuelt sikkerhetsansvarlig eller leder
+-Postmesteren
+[q]
+[q]
+radio
+Hvilket av følgende er IKKE et råd teksten gir hvis du allerede har oppgitt sensitiv informasjon?
+-Koble fra internett hvis du mistenker nedlasting av skadelig programvare
++Ignorere situasjonen og håpe på det beste
+-Endre passordene dine
+-Kontakte banken ved delt kort- eller kontoinformasjon
+[q]
+[q]
+checkbox
+Hvilke steder anbefales for å rapportere et svindelforsøk som privatperson?
++Politiets nettpatrulje
++NorSIS via slettmeg.no
+-Skal ikke rapporteres noen steder
+-Bare rapportere til sosiale medier
+[q]
+[q]
+radio
+Hva må du være spesielt oppmerksom på når du sjekker avsenderadressen?
+-At adressen har mange tegn
++At adressen kan ligne på en ekte adresse, men med små forskjeller (f.eks. "posten-no.com" vs. "posten.no")
+-At adressen er skrevet med stor forbokstav
+-At adressen inneholder tall
+[q]
+[q]
+checkbox
+Hvilke tiltak anbefales for å sikre kontoene dine etter en mulig sikkerhetsfeil?
++Endre passord, særlig hvis samme passord er brukt flere steder
++Kjøre et virussøk på datamaskinen
+-Kjøpe nytt utstyr umiddelbart
++Kontakt banken hvis kort- eller kontoinformasjon er delt
 [q]

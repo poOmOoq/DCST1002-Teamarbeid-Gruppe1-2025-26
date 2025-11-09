@@ -1,0 +1,67 @@
+#Tegn på phishing#
+•	Uvanlig ansenderadresse / brukernavn
+F. eks kundeservice.dnb@gmail.com
+Ekte selskaper bruker nesten aldri Gmail. Hotmail. Outlook etc.
+De har som oftest no-reply@selskap-navn.com eller noe lignende.
+
+•	Språkfeil og rare formuleringer
+Mange phishing-meldinger er skrevet dårlig. Det kan være ord som mangler, skrivefeil, eller dårlig norsk/engelsk.
+Viktig å notere seg at i nyere til pga. AI/KI så har språket i phishing-meldinger blitt mye bedre.
+
+•	Stress og press
+Phishing prøver ofte å få deg til å få panikk og handle raskt. F.eks “Du må logge inn nå eller blir kontoen låst”. Men ikke stress. Som ofte vil ikke banken sende sånne meldinger og vil aldri spør deg om personlig informasjon som brukernavn og passord.
+
+•	Merkelig lenke
+Når du holder musepekeren over lenken (eller trykker og holder på mobil), så kan du se at lenken egentlig går til en annen adresse enn det som står i teksten. 
+F.eks:
+“Trykk her for å logge inn i Vipps” -> lenken går til vipps-sikkerhet-check.com (ikke ekte)
+
+•	Fake nettsider
+Phishing-meldinger leder ofte til fake nettsider som ser veldig like ekte nettsider.
+De kan kopiere alt fra logo, farger, design og tekst, men det er noen ting du kan sjekke: 
+
+1)	Sjekk nettadressen (URL)
+Dette er det viktigste. Mange falske nettsider har en URL som nesten er lik den ekste, men med små forskjeller. Som eksempelet fra tidligere.
+Hovedregel: kjente tjenester har enkle domenenavn:
+•	bankid.no
+•	vipps.no
+•	instagram.com
+•	snapchat.com
+
+2)	Sjekk om det står https og hengelås
+De fleste ekte nettsider har en henglelås og “https” i adressen, men OBS!
+Også mange falske nettsider bruker https og hengelås nå. 
+Så du kan ikke bare stole på hengelåsen.
+Eks:
+
+<div class="imageContainer"></div>
+
+3)	Se etter dårlig kvalitet
+Fake nettsider har ofte:
+•	Dårlig norsk
+•	Uklare logoer
+•	Feil font
+•	“error” tekst midt i
+
+De bruker ofte bare skjermbilder de fant på Google for å lage nettsiden fort.
+
+
+Eksempler på phishing
+Typisk e-post:
+    Hei! 
+    Kontoen din vil bli sperret innen 24 timer hvis du ikke bekrefter identiteten din. 
+    Logg inn her for å unngå dette: vipps-sikkerthet-check.com
+    Hilsen Vipps Support
+-> Dette er phishing. Vipps sender aldri slike krav på e-post.
+
+Instagram DM:
+    Hei, vi har sett at en av dine videoer bryter retningslinjene våre. Kontoen blir stengt om 12 timer. Trykk her for å beholde kontoen: instagram-verify-business.info
+-> Også phishing. Instragram sender slike beskjeder kunn ikke i appen – ikke på slike lenker. 
+
+Eksempel:
+
+<div class="imageContainer"></div>
+<div class="imageContainer"></div>
+
+Kilder:
+Se kildesiden, øverst til høyre.

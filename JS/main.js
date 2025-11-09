@@ -1,3 +1,13 @@
+const add_images = () => {
+    const imageContainers = [
+        ...document.getElementsByClassName("imageContainer"),
+    ];
+
+    imageContainers.forEach((container, i) => {
+        append_this(container, "img").src = `./IMG/img${i}.png`;
+    });
+};
+
 /**
  * @param {string} file
  * @param {string} id
@@ -26,6 +36,7 @@ const load_text = (file, id) => {
 
             if (id == "quiz") pop_up_starter();
             add_contet(MAIN, data.slice(end + 1).split("[q]"));
+            if (id == "p2") add_images();
         })
         .catch((e) => console.log(e));
 };
