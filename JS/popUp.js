@@ -1,4 +1,5 @@
 const pop_up_starter = () => {
+    clear_time();
     fetch("./TXT/popUp.txt")
         .then((res) => res.text())
         .then((data) => {
@@ -8,30 +9,35 @@ const pop_up_starter = () => {
                 if (data[i].includes("\r")) data[i] = data[i].slice(0, -1);
                 str += data[i] + "|";
             }
+            sessionStorage.removeItem("ads");
             sessionStorage.setItem("ads", str);
             return pop_up_machine();
         });
 };
 
-const pop_up_show = (adId) => {
+const pop_up_show = (ad) => {
+    clear_time();
     const popUp = document.getElementById("popUp");
     const grayOut = document.getElementById("grayOut");
-    const placement = Math.floor(Math.random() * 3);
     const popUpClose = document.getElementById("popUpClose");
     const content = document.getElementById("popUpContent");
     const scam = document.getElementById("popUpScam");
-    const ad = sessionStorage.getItem("ads").split("|")[adId].split("*");
-    const color = Math.floor(Math.random() * 3);
+    let placement = Math.floor(Math.random() * 3);
+    let color = Math.floor(Math.random() * 3);
     let maxTime = Math.ceil(Math.random() * 3) * 5;
 
     content.innerHTML = ad[0];
     scam.innerHTML = ad[1];
+    // scam.addEventListener("click", check_quiz("scam"));
 
     popUpClose.onclick = null;
     popUpClose.onmouseover = null;
     popUpClose.onmouseout = null;
     popUpClose.classList = "";
-    popUp.classList = "popUpBorder correct"; //color == 0 ? "popUpBorder" : color == 1 ? "correct" : "incorrect";
+    if (sessionStorage.getItem("page") != "quiz") return;
+    popUp.classList =
+        "popUpBorder " +
+        (color == 0 ? "popUpBorder" : color == 1 ? "correct" : "incorrect");
     popUp.style.marginTop = (-popUp.offsetHeight - 1).toString() + "px";
 
     if (placement == 0) {
@@ -66,46 +72,43 @@ const pop_up_show = (adId) => {
     popUpClose.style.float =
         Math.floor(Math.random() * 2) == 0 ? "left" : "right";
 
-    let time = maxTime;
+    sessionStorage.setItem("time", maxTime);
     let timeID = setInterval(() => {
-        popUpClose.innerHTML = time;
-        time--;
+        let time = Number(sessionStorage.getItem("time"));
+        if (time >= 0) {
+            popUpClose.innerHTML = time.toString();
+            sessionStorage.setItem("time", time - 1);
+        } else {
+            clearInterval(timeID);
+        }
     }, 1000);
 
-    let fadeID = 0;
-    let opacityID = setTimeout(() => {
-        let opacity = 0;
-        clearInterval(timeID);
+    sessionStorage.setItem("opacity", 0);
 
-        popUpClose.style.opacity = 0;
-        popUpClose.innerHTML = "&times;";
-
-        fadeID = setInterval(() => {
+    let fadeID = setInterval(() => {
+        if (Number(sessionStorage.getItem("time")) <= 0) {
+            let opacity = Number(sessionStorage.getItem("opacity"));
+            popUpClose.innerHTML = "&times;";
             if (opacity < 1) {
                 opacity += 0.04;
                 popUpClose.style.opacity = opacity;
+                sessionStorage.setItem("opacity", opacity);
             } else {
+                popUpClose.onmouseover = () => {
+                    document.getElementById("popUpClose").style.opacity = 0.7;
+                };
+                popUpClose.onmouseout = () => {
+                    document.getElementById("popUpClose").style.opacity = 1;
+                };
+
+                popUpClose.onclick = pop_up_close;
+                popUpClose.classList = "popUpCloseReady";
                 clearInterval(fadeID);
             }
-        }, 200);
-    }, 1000 * (maxTime + 1));
+        }
+    }, 200);
 
-    let closeID = setTimeout(() => {
-        popUpClose.onmouseover = () => {
-            document.getElementById("popUpClose").style.opacity = 0.7;
-        };
-        popUpClose.onmouseout = () => {
-            document.getElementById("popUpClose").style.opacity = 1;
-        };
-
-        popUpClose.onclick = pop_up_close;
-        popUpClose.classList = "popUpCloseReady";
-    }, 1000 * (maxTime + 6));
-
-    sessionStorage.setItem(
-        "ID",
-        [timeID, fadeID, opacityID, closeID].toString()
-    );
+    sessionStorage.setItem("ID", [timeID, fadeID].toString());
 };
 
 const pop_up_machine = () => {
@@ -116,29 +119,31 @@ const pop_up_machine = () => {
         .map((ad) => {
             return ad.split("*");
         });
-    let adId = Math.floor(Math.random() * ALL_ADS.length);
-    let time = Math.floor(Math.random() * 3) + 5;
 
-    setTimeout(pop_up_show, time * 1000, adId);
+    setTimeout(
+        pop_up_show,
+        Math.floor(Math.random() * 3) + 5 * 1000,
+        ALL_ADS[Math.floor(Math.random() * ALL_ADS.length)]
+    );
 };
 
 const clear_time = () => {
-    sessionStorage
-        .getItem("ID")
-        .split(",")
-        .forEach((ID) => {
-            try {
-                clearInterval(ID);
-            } catch {
+    try {
+        sessionStorage
+            .getItem("ID")
+            .split(",")
+            .forEach((ID) => {
                 try {
-                    clearTimeout(ID);
+                    clearInterval(ID);
                 } catch {}
-            }
-        });
+            });
+    } catch {}
 };
 
 const pop_up_close = () => {
-    clear_time();
+    try {
+        clear_time();
+    } catch {}
     const grayOut = document.getElementById("grayOut");
     const popUp = document.getElementById("popUp");
 

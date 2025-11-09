@@ -134,7 +134,6 @@ body {
     background-color: var(--second-color);
     border: 0.5rem solid var(--third-color);
     border-radius: 3rem;
-
 }
 
 .incorrect {
@@ -145,6 +144,11 @@ body {
 .correct {
     border-color: #70e000;
     background-color: #008000;
+}
+
+.ready:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .hide {

@@ -56,7 +56,11 @@ const add_answear = (container, type, answear_text, id, question_id) => {
     answear.id = id;
     answear.setAttribute(
         "onclick",
-        `answear_clicked("${question_id}", "${id}")`
+        `${
+            sessionStorage.getItem("page") == "quiz"
+                ? "quiz_answear_clicked"
+                : "answear_clicked"
+        }("${question_id}", "${id}")`
     );
 
     let label = append_this(container, "label", answear_text.slice(1));
@@ -126,6 +130,17 @@ const add_contet = (main, data) => {
             append_this(main, "div", data[i].replaceAll("\n", "<br>"));
             continue;
         }
-        add_question_container(main, ~~(i / 2) + 1, data[i]);
+        if (sessionStorage.getItem("page") == "quiz") {
+            add_quiz_container(main, ~~(i / 2) + 1, data[i]);
+        } else {
+            add_question_container(main, ~~(i / 2) + 1, data[i]);
+        }
+    }
+    if (sessionStorage.getItem("page") == "quiz") {
+        append_this(main, "br");
+
+        let state = append_this(main, "div", "Send inn svar");
+        state.classList = "questionContainer notAnsweared";
+        state.style.justifySelf = "center";
     }
 };

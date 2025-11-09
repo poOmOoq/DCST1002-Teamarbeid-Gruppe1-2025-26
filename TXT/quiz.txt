@@ -1,0 +1,43 @@
+#Quiz#
+La oss teste ut hva du kan om phishing!
+
+[q]
+radio
+Spørsmål 1<br>qwerty
+-A
+-B
++C
+-D
+[q]
+[q]
+radio
+Spørsmål 2<br>qwerty
+-A
+-B
++C
+-D
+[q]
+[q]
+radio
+Spørsmål 3<br>qwerty
+-A
+-B
++C
+-D
+[q]
+[q]
+radio
+Spørsmål 4<br>qwerty
+-A
+-B
++C
+-D
+[q]
+[q]
+radio
+Spørsmål 5<br>qwerty
+-A
+-B
++C
+-D
+[q]
